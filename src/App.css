@@ -291,3 +291,106 @@
   border: 1px solid rgba(239, 68, 68, 0.2);
   font-size: 0.85rem;
 }
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .main-content, .navbar-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .header-title {
+    font-size: 1.6rem;
+  }
+  
+  .header-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .main-content {
+    margin: 1rem auto;
+    padding: 0 0.75rem;
+    gap: 1.25rem;
+  }
+
+  .card-container {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .stat-card {
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: var(--radius-md);
+  }
+
+  .student-table th, 
+  .student-table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .section-header {
+    padding: 0.85rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .form-section {
+    max-width: 100%;
+  }
+
+  .score-input {
+    width: 55px;
+    padding: 0.35rem 0.45rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-update {
+    padding: 0.35rem 0.5rem;
+    margin-left: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.4rem;
+  }
+
+  .navbar-wrapper {
+    gap: 0.5rem;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .student-table th, 
+  .student-table td {
+    padding: 0.65rem 0.75rem;
+  }
+}

@@ -23,7 +23,7 @@ function StatsCards({ students }) {
     <div className="stats-grid">
       
       {/* Total Enrolled Card */}
-      <div className="stat-card card-container stat-blue animate-fade-in">
+      <div className="stat-card animate-fade-in stat-blue">
         <div className="stat-icon-box">
           <Users size={24} />
         </div>
@@ -34,7 +34,7 @@ function StatsCards({ students }) {
       </div>
 
       {/* Passing Grades Card */}
-      <div className="stat-card card-container stat-green animate-fade-in">
+      <div className="stat-card animate-fade-in stat-green">
         <div className="stat-icon-box">
           <CheckCircle size={24} />
         </div>
@@ -45,7 +45,7 @@ function StatsCards({ students }) {
       </div>
 
       {/* Average Score Card */}
-      <div className="stat-card card-container stat-purple animate-fade-in">
+      <div className="stat-card animate-fade-in stat-purple">
         <div className="stat-icon-box">
           <BarChart3 size={24} />
         </div>
